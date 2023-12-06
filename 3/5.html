@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>文字常用样式</title>
+        <style>
+            p{
+                color: cadetblue;
+
+                /* 
+                    字体粗细 
+                    font-weight：
+                    100-300 字体变细 / lighter
+                    400-500 正常字体 / normal
+                    600-900 字体变粗 / bold / bolder
+                */
+                font-weight: bold;
+
+                /* 
+                    字体大小
+                    font-size
+                    浏览器识别最小字体 12px
+                */
+                font-size: 20px;
+
+                /* 
+                    缩放scale：0~1（行内元素不生效？<p></p>不生效）
+                    0 消失
+                    1 和原来一样大
+                    0.x 等比例缩小
+                */
+                scale: 0.5;
+
+                /* 
+                    字体样式
+                    font-style：
+                        italic 倾斜
+                        normal 正常
+                */
+                font-style: italic;
+
+                /* 
+                    字体格式
+                */
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                
+                /* 
+                    边框
+                    符合属性
+                    border：宽度 样式 颜色
+                 */
+                border: 1px solid black;
+                /* 边框宽度 */
+                border-width: 5px;
+                /* 
+                    边框样式 
+                    solid 实线
+                    double 双边框
+                    dashed 虚线
+                    dotted 点线
+                */
+                border-style: dotted;
+                /* 边框颜色 */
+                border-color: darkblue;
+            }
+            span{
+                font-weight: 800;
+                font-size: 50px;
+                scale: 0.5;
+                font-style: italic;
+            }
+            div{
+                width: 300px;
+                height: 300px;
+                background: blue;
+                color: aqua;
+                /* 
+                控制文字横向位置 
+                    center
+                    left
+                    right
+                */
+                text-align: center;
+                /* 
+                    行间距
+                */
+                line-height: 300px;
+                /* 让文字在盒子居中  text-align: center ；line-height: 盒子高度*/
+            }
+            #kfc{
+                background-color: azure;
+                font-size: 50px;
+                font-weight: bold;
+                color: crimson;
+                text-align: center;
+                border-width: 5px;
+                border-style: dashed;
+                border-color: cornflowerblue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            text-indent: 文本
+            text-indent: 2em 缩进两字符
+         -->
+        <p style="text-indent: 2em;">一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字</p>
+        <span style="font-size: 12px;">12号字体</span><br>
+        <span>abcdefg</span>
+        <div>
+            一段文字
+        </div>
+        <p id="kfc">晚上吃肯德基</p>
+    </body>
+</html>

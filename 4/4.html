@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        /* 为什么浮动
+            想让元素在一行显示
+            float：left/right
+            添加浮动属性后对浮动前的元素无影响
+            缺点：会导致父元素的高度塌陷 */
+        .one{
+            width: 200px;
+            height: 200px;
+            background: aqua;
+            float: left;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background: aquamarine;
+            float: left;
+        }
+        .three{
+            width: 200px;
+            height: 200px;
+            background: cadetblue;
+            float: left;
+        }
+        .four{
+            width: 200px;
+            height: 200px;
+            background: cornflowerblue;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+    <div class="four">4</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css基础样式</title>
+    <style>
+        a{
+            color: black;
+
+            /* 取消a标签的默认样式 */
+            text-decoration: none;
+        }
+        a:hover{
+            color: #f00;
+        }
+
+        ul{
+            /* 取消无序列表默认样式 */
+            list-style: none;
+        }
+        ul li:hover{
+            color: #f00;
+            /* 鼠标变小手 */
+            cursor: pointer;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background: #f00;
+            border: 5px solid black;
+            /* 取消边框 */
+            border: none;
+
+            /* 
+                圆角
+                border-radius
+                50% 变成圆
+                左上变 border-top-left-radius
+                右上变 border-top-right-radius
+                左下变 border-bottom-left-radius
+                右下变 border-bottom-right-radius
+            */
+            border-radius: 10px;
+        }
+        input{
+            /* 取消input黑色默认样式 */
+            /* 
+                outline 轮廓 
+                复合属性
+                outline-width
+                outline-style
+                outline-color
+            */
+            outline: none;
+            outline: 1px dashed indianred;
+        }
+
+        /* 
+            伪元素
+            ::after 在后面 
+            ::before 在前面
+            
+            css2语法 :after :before
+            css3语法 ::after ::before
+        */
+        p::after{
+            content: "今天天气真好在后面";
+            color: blue;
+        }
+        p::before{
+            content: "在前面今天天气真好";
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <p>这是一段文字</p>
+    <div></div>
+    <br>
+    <input type="text" placeholder="请输入">
+    <a href="">a1</a>
+    <a href="">a2</a>
+    <a href="">a3</a>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+</html>

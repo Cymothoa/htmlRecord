@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css引入方式</title>
+    <!-- 外部样式表引入 -->
+    <!-- 
+        link标签引入
+        rel 引入页面的关系stylesheet（样式表）
+        href 路径地址
+     -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- 内部样式表 -->
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 样式：css -->
+    <!-- 行内样式（内联样式） -->
+    <!-- 行内样式 > 内部样式表 > 外部样式表 -->
+    <div style="width: 300px;height: 300px;background-color: aquamarine;">盒子</div>
+</body>
+</html>

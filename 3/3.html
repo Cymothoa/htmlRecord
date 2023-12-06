@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器的优先级</title>
+    <style>
+        /* div{
+            color: blue !important;
+        } */
+        div{
+            color: blue;
+        }
+        #word{
+            color: deeppink;
+        }
+        .text{
+            color: aquamarine;
+        }
+        ul li:first-child{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        css选择器层级及权重
+        !important > 内联样式（style）>  id选择器  >   伪类选择器=类选择器=属性选择器 > 标签选择器
+        正∞          1，0，0，0         0，1，0，0     0，0，1，0                     0，0，0，1
+     -->
+    <div style="color: aqua;">emm</div>
+    <div id="word" class="text ">aaa</div>
+    <ul>
+        <li class="text">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+</html>

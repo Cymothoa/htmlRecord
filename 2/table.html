@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>表格</title>
+    </head>
+    <body>
+        <!-- 
+            table：表格标签 双标签
+            tr标签 表格的行
+            th标签 表格的头部
+            td标签 表格的主体
+            caption 标题标签（表格的）
+            border边框属性 在table中添加
+            cellpadding属性 内容和单元格边框的距离
+            cellspacing属性 边框和边框之间的距离
+            align 位置属性：
+                left（默认）
+                center
+                right
+            bgcolor 单元格的背景色（不推荐使用）
+            rowspan 合并行 合并n行要注释掉n-1个tr的对应td
+            colspan 合并列
+         -->
+        <table border="1" cellpadding="10" cellspacing="5" align="center">
+            <caption>课程表</caption>
+            <tr>
+                <!-- 表头 thead-->
+                <!-- 合并行① -->
+                <th rowspan="2">周一</th>
+                <th>周二</th>
+                <th>周三</th>
+                <th>周四</th>
+            </tr>
+            <tr>
+                <!-- 内容 tbody -->
+                <!-- 合并行② -->
+                <!-- <td>1</td> -->
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <!-- 内容 tbody -->
+                <td>1</td>
+                <!-- 合并列 -->
+                <td colspan="2" align="center">2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+        </table>
+    </body>
+</html>

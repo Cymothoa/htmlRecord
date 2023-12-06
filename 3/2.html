@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>选择器</title>
+        <style>
+            /* 新写的样式表会覆盖旧的 */
+            /* 
+                标签选择器 
+                (多个都生效 该页面两个div都变蓝了)
+            */
+            div {
+                width: 200px;
+                height: 200px;
+                background-color: cornflowerblue;
+            }
+            h2 {
+                color: aqua;
+            }
+
+            /* 
+                id选择器
+                格式：
+                在body标签内的：id="名字（英文）"
+                在style样式表里 ： #名字{...}
+            */
+            #word {
+                color: blue;
+            }
+
+            /* 
+                类选择器
+                格式：
+                在body标签内的：class="名字（英文）"
+                在style样式表里 ： .名字{...}
+            */
+            .main {
+                color: navy;
+            }
+
+            /* 包含选择器（后代选择器） */
+            /* 这里注释掉了 想看效果先把下面那个子类选择器注释了 */
+            /* p span {
+                color: rgb(29, 44, 158);
+            }
+            p span {
+                color: rgb(140, 150, 230);
+            } */
+
+            /* 
+                伪类选择器
+                ：hover 划过效果
+                ：first-child 更改第一个子元素（一般用于列表）
+                ：last-child 更改最后一个子元素
+                ：nth-child（数字） 更改自定义的子元素
+                    更改偶数项 even 2n
+                    更改奇数项 odd 2n+1
+            */
+            a:hover {
+                color: crimson;
+            }
+            /* p span:first-child{
+                color: coral;
+            } */
+            ul li:first-child{
+                color: darksalmon;
+            }
+            ul li:last-child{
+                color: darkseagreen;
+            }
+            ul li:nth-child(odd){
+                color: deeppink;
+            }
+            /* 子类选择器 */
+            p>span {
+                color: cadetblue;
+            }
+
+            /* 
+                属性选择器 （不常用）
+                格式：
+                标签[属性="属性值"]{...}
+            */
+            img[alt="www"]{
+                width: 200px;
+                height: 200px;
+            }
+            /* 
+                相邻选择器（不常用）
+                改变挨着h1的h2
+            */
+            h1+h2{
+                color: aqua;
+            }
+            h2+h3{
+                color: aquamarine;
+            }
+            /* 不生效 好像只能改后面那个 */
+            h4+h3{
+                color: blue;
+            }
+            /* 
+                同级选择器（和h1同级的h3颜色改变）（不常用）
+            */
+            h1~h3{
+                color: darkkhaki;
+            }
+            /* 群组选择器 ，连接同级标签*/
+            p,span,h6{
+                color: ivory;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            盒子
+            <h2>标题</h2>
+        </div>
+        <p id="word">这是一段内容</p>
+        <p class="main">又一段内容</p>
+        <a href="">音乐</a>
+        <a href="">书法</a>
+        <a href="">舞蹈</a>
+        <a href="">雕塑</a>
+        <!--  -->
+        <p>
+            <span>新的行内元素</span>
+            <span>新的行内元素</span>
+            <span>新的行内元素</span>
+        </p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+        <img src="./3.15.2.png" alt="www">
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <div>
+            <p>123</p>
+            <span>456</span>
+            <h5>456</h5>
+            <h6>456</h6>
+            <span>456</span>
+        </div>
+    </body>
+</html>

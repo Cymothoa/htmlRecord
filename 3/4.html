@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用样式</title>
+    <style>
+        div{
+            /* 宽度   px：像素*/
+            width: 1000px;
+
+            /* 高度 */
+            height: 1000px;
+
+            /* 颜色 */
+            color: #f00;
+
+            /* 背景色 */
+            background-color: yellow;
+            background: yellowgreen;
+
+            /* 背景图片 background-image: url("引入图片路径")*/
+            background-image: url(./3.15.2.png);
+
+            /* 
+                背景平铺
+                no-repeat 不平铺
+                repeat-x  横向平铺
+                repeat-y  纵向平铺
+                repea     平铺
+            */
+            background-repeat: no-repeat;
+
+            /* 
+                背景尺寸
+                cover 全覆盖
+                contain 与原图等比例的放缩
+            */
+            background-size: cover;
+            background-size: contain;
+
+            /* 
+                背景位置 
+                1.x轴 y轴
+                2.right/left top/bottom
+            */
+            background-position: 200px 200px;
+            background-position: right top;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">一个盒子</div>
+</body>
+</html>

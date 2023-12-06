@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: rosybrown;
+            border: 5px solid royalblue;
+            padding: 20px;
+
+            /* 
+                盒模型
+                1.标准盒模型 box-sizing：content-box
+                    width = content (内容宽的) + padding +border
+                    height = content (内容宽的) + padding +border
+                2.怪异盒模型（IE盒模型）box-sizing：border-box；
+                    width = content (内容宽度 + padding + border)
+                    height = content (内容宽度 + padding + border) 
+            */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
